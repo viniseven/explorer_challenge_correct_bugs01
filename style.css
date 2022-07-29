@@ -1,49 +1,90 @@
-body {
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
-  margin: auto;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-#hero {
-    width: 592px;
-    margin: 0px auto;
+:root{
+    font-size: 62.5%;
+    --bg-color: #FFFFFF;
+    --fc-first: #000000;
+    --fc-second: #7D7987;
+    --fc-third: #FF9900;
+    --ff-title: 'Inter', sans-serif;
+    --ff-content: 'Open Sans', sans-serif;
+    --fs-title: clamp(2rem, 3vw, 4.9rem);
+    --fs-content: clamp(1.3rem, 3vw, 2rem);
 }
 
-h1 {
-  font-family: "Inter", sans-serif;
-  font-size: 49px;
-  line-height: 56px;
-  font-weight: normal;
+body{
+    width: 100vw;
+    height: 100vh;
 }
 
-h1 span {
-  font-weight: bold;
-  margin-bottom: 32px;
-  color: #ff9900;
+#contentHeroAndText{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-span, a {
-  color: #ff9900;
+#contentHeroAndText img{
+    margin-bottom: 7.2rem;
+
 }
 
-p, #footer {
-  color: #7d7987;
-  font-size: 14px;
-  line-height: 28px;
+#contentHeroAndText h1{
+    font-family: var(--ff-title);
+    font-size: var(--fs-title);
+    line-height: 5.6rem;
 }
 
-#footer a + a {
-    margin-left: 28px;
+#contentHeroAndText span{
+    color: var(--fc-third);
 }
 
-.line {
-    width: 568px;
-    border: 1px solid #ECEFF2;
-    margin: auto;
+#contentHeroAndText p{
+    text-align: center;
+    font-family: var(--ff-content);
+    color: var(--fc-second);
+    font-size: var(--fs-content);
+    padding: 2rem;
+    line-height: 2.8rem;
 }
 
-#balls {
+#footer{
+   text-align: center;
+    padding-top: 8px;
+   border-top: 1px solid #ECEFF2;
+}
+
+#footer button{
+    padding: 4px;
+    background-color: var(--fc-third);
+    border: none;
+    padding: 10px 10px;
+    color: #FFF;
+    font-family: var(--ff-content);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#footer button:hover{
+   background-color: #da8506;
+   cursor: pointer;
+}
+
+#footer button:nth-child(2){
+    margin-left: 2rem;
+}
+
+#balls{
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 1rem;
+    right: 1rem;
 }
+

@@ -1,62 +1,37 @@
-<!-- Instrução que define o tipo do documento. -->
 <!DOCTYPE html>
 <html lang="pt-br">
-  <!-- Tag <head> contém as instruções para a página -->
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Móveis customizados</title>
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <!-- Tag <body> é o corpo do documento, onde tem as informações que serão mostradas. -->
-  <body>
-    <div id="hero">
-      <img
-      src="images/img1.jpg"
-      alt="Desenho de uma pessoa vestindo uma camisa amarela em uma sala com Móveis"
-    />
-      
-      <h1>Ambientes <span>únicos</span> para você!</h1>
-
-      <p>
-        Nós criamos ambientes <span>exclusivos e únicos</span>, com muito
-        bom gosto e profissionalismo, investimos tempo e
-        <strong>dedicação no seu projeto.</strong>
-
-        <br />
-        <br />
-
-        Tenha ambientes limpos e bem <span>decorados</span>, transmitindo
-        <strong>elegância e finesse</strong>
-        para todo aquele que estiver ali.
-      </p>
-
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Explorer - Projeto 01</title>
+    </head>
     
-    <div class="line"></div>
-    <div id="footer">
-      <a target="_blank" href="https://instagram.com/moveisparavoce"
-        >Instagram</a
-      >
-      <a href="mailto:contato@moveisparavoce.com">Fale conosco</a>
-    </div>
+    <body>
+        <div id="contentHeroAndText">
+            <img src="./images/image_header.png" 
+            alt="Pessoa em uma sala de móveis, vestindo uma camiseta laranja">
 
-    
-    <div id="balls">
-      <img
-        id="balls"
-        src="images/balls.svg"
-        alt="Bolinhas alaranjadas no canto inferior direito da tela"
-      />
-    </div>
-  </body>
+
+            <h1>Ambientes <span>únicos</span> para você!</h1>
+
+            <p>Nós criamos ambientes <strong>exclusivos</strong> e <strong>únicos</strong>,
+                com muito bom gosto e profissionalismo, investimos tempo e <span>dedicação no seu projeto.</span>
+            </p>
+
+            <p>Tenha <span>ambientes limpos</span> e bem decorados, transmitindo <strong>elegância</strong> e 
+                <strong>finesse</strong> para todo aquele que estiver ali.
+            </p>
+        </div>
+
+        <div id="footer">
+            <button>Instagram</button>
+            <button>Fale conosco</button>
+        </div>
+
+        <div id="balls">
+            <img src="./images/balls.svg" alt="Bolinhas laranjas no canto inferior direito da tela.">
+        </div>
+    </body>
 </html>
